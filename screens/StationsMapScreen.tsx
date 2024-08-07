@@ -201,7 +201,7 @@ export default function StationsMapScreen() {
                 color="white"
               />
               <Text style={styles.modalControlsButtonText}>
-                Сканировать QR код
+                Scan QR code
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -209,7 +209,7 @@ export default function StationsMapScreen() {
               onPress={onPay}
             >
               <MaterialIcons name="payment" size={18} color="white" />
-              <Text style={styles.modalControlsButtonText}>Оплатить</Text>
+              <Text style={styles.modalControlsButtonText}>Payment</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity style={styles.closeButton} onPress={onClose}>
@@ -249,7 +249,7 @@ export default function StationsMapScreen() {
             />
           </View>
           <Text style={styles.itemContainerStatus}>
-            Status:{" "}
+            Status: 
             <Text
               style={[
                 styles.strong,
@@ -330,7 +330,7 @@ export default function StationsMapScreen() {
         onRequestClose={closeModalList}
       >
         <SafeAreaView style={styles.modalContainerList}>
-          <Text style={styles.modalTitleList}>Коннекторы:</Text>
+          <Text style={styles.modalTitleList}>Connectors:</Text>
           <FlatList
             data={stations}
             keyExtractor={(item) => item.id.toString()}
@@ -351,7 +351,7 @@ export default function StationsMapScreen() {
             style={styles.closeModalButtonList}
             onPress={closeModalList}
           >
-            <Text style={styles.closeModalButtonTextList}>Закрыть</Text>
+            <Text style={styles.closeModalButtonTextList}>Close</Text>
           </TouchableOpacity>
         </SafeAreaView>
       </Modal>
