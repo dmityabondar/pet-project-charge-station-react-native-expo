@@ -1,4 +1,4 @@
-# Pet project for electric charge stations
+# Example electric charge stations app (React Native)
 
 > React Native, Expo, QR Scanner, Maps
 
